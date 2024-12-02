@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(247, 236, 222);
+}
+
+h1 {
+    color: #352e28;
+    background-color: transparent;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+    background-color: #fc6;
+    transition: top 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+h1:hover::after {
+    top: 40%;
+}
+
+h2 {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(186deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    font-family: 'Righteous', cursive;
+}
+
+label{
+
+    font-family: 'Righteous', cursive;
+
+}
+
+.cartona {
+
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
+}
+
+td {
+    padding: 10px;
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+button{
+    border: none;
+}
